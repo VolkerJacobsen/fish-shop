@@ -1,16 +1,9 @@
 import { StyledForm, StyledHeading, StyledLabel } from "./ProductForm.styled";
 import { StyledButton } from "../Button/Button.styled";
 
-export default function ProductForm() {
-  async function handleSubmit(event) {
-    event.preventDefault();
-
-    const formData = new FormData(event.target);
-    const productData = Object.fromEntries(formData);
-  }
-
+export default function ProductForm({ handleAddProduct }) {
   return (
-    <StyledForm onSubmit={handleSubmit}>
+    <StyledForm onSubmit={handleAddProduct}>
       <StyledHeading>Add a new Fish</StyledHeading>
       <StyledLabel htmlFor="name">
         Name:
