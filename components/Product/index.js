@@ -1,7 +1,6 @@
 import useSWR from "swr";
 import { useRouter } from "next/router";
 import { ProductCard } from "./Product.styled";
-import Comments from "../Comments";
 import { StyledLink } from "../Link/Link.styled";
 import { useState } from "react";
 import { StyledButton } from "../Button/Button.styled";
